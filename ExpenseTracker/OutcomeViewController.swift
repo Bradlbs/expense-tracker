@@ -143,9 +143,9 @@ class SecondViewController: UIViewController , UIPopoverPresentationControllerDe
             //let cost = Expense(data: data!)
             //userdata.income?[date]?.append(cost)*/
             let cost = Expense(amount: amount,category: category)
-            var incomearray : [Expense] = Userdata.income[getdate(date)] ?? []
-            incomearray.append(cost)
-            Userdata.income[getdate(date)] = incomearray
+            var outcomearray : [Expense] = Userdata.outcome[getdate(date)] ?? []
+            outcomearray.append(cost)
+            Userdata.outcome[getdate(date)] = outcomearray
             performSegue(withIdentifier: "donesegue", sender: self)
         }
     }
