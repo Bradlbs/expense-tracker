@@ -22,6 +22,7 @@
 		A2CCEF6D1F273AB400CA669E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2CCEF6B1F273AB400CA669E /* Main.storyboard */; };
 		A2CCEF6F1F273AB400CA669E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2CCEF6E1F273AB400CA669E /* Assets.xcassets */; };
 		A2CCEF721F273AB400CA669E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2CCEF701F273AB400CA669E /* LaunchScreen.storyboard */; };
+		B6F9530A1F84963A0075B39D /* ExpenseT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6F953081F84963A0075B39D /* ExpenseT.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		A2CCEF6E1F273AB400CA669E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2CCEF711F273AB400CA669E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2CCEF731F273AB400CA669E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6F953091F84963A0075B39D /* ExpenseT.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExpenseT.xcdatamodel; sourceTree = "<group>"; };
 		E5A58C3E57A32F812D71B69C /* Pods-ExpenseTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpenseTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExpenseTracker/Pods-ExpenseTracker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -173,6 +175,7 @@
 		A2CCEF641F273AB400CA669E /* ExpenseTracker */ = {
 			isa = PBXGroup;
 			children = (
+				B6F953081F84963A0075B39D /* ExpenseT.xcdatamodeld */,
 				A22C9F2A1F52D6BD00EEF7D8 /* Module */,
 				A26B38C21F2DC13A00A99C2D /* supporting files */,
 				A22C9F2B1F52D6E800EEF7D8 /* ViewController */,
@@ -362,6 +365,7 @@
 				A27CADB71F36C4FE00E4A19A /* displayboard.swift in Sources */,
 				A2CCEF661F273AB400CA669E /* AppDelegate.swift in Sources */,
 				A2CCEF681F273AB400CA669E /* FirstViewController.swift in Sources */,
+				B6F9530A1F84963A0075B39D /* ExpenseT.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +404,7 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = KJZ8GTCP4S;
 				INFOPLIST_FILE = ExpenseTrackerUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Boshi-Liu.ExpenseTrackerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -413,6 +418,7 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = KJZ8GTCP4S;
 				INFOPLIST_FILE = ExpenseTrackerUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Boshi-Liu.ExpenseTrackerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -579,6 +585,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B6F953081F84963A0075B39D /* ExpenseT.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B6F953091F84963A0075B39D /* ExpenseT.xcdatamodel */,
+			);
+			currentVersion = B6F953091F84963A0075B39D /* ExpenseT.xcdatamodel */;
+			path = ExpenseT.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A2CCEF5A1F273AB400CA669E /* Project object */;
 }
