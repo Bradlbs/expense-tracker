@@ -1,9 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16C67" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Income" representedClassName="Income" syncable="YES" codeGenerationType="class"/>
-    <entity name="Outcome" representedClassName="Outcome" syncable="YES" codeGenerationType="class"/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Income" representedClassName="Income" syncable="YES" codeGenerationType="class">
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="income" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="monthly" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MonthlyIncome" inverseName="incomes" inverseEntity="MonthlyIncome" syncable="YES"/>
+    </entity>
+    <entity name="MonthlyIncome" representedClassName="MonthlyIncome" syncable="YES" codeGenerationType="class">
+        <attribute name="amount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="month" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="incomes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Income" inverseName="monthly" inverseEntity="Income" syncable="YES"/>
+    </entity>
+    <entity name="MonthlyOutcome" representedClassName="MonthlyOutcome" syncable="YES" codeGenerationType="class">
+        <attribute name="amount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="month" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="outcomes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Outcome" inverseName="monthly" inverseEntity="Outcome" syncable="YES"/>
+    </entity>
+    <entity name="Outcome" representedClassName="Outcome" syncable="YES" codeGenerationType="class">
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="outcome" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="monthly" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MonthlyOutcome" inverseName="outcomes" inverseEntity="MonthlyOutcome" syncable="YES"/>
+    </entity>
     <elements>
-        <element name="Income" positionX="-63" positionY="-18" width="128" height="45"/>
-        <element name="Outcome" positionX="-54" positionY="-9" width="128" height="45"/>
+        <element name="Income" positionX="-72" positionY="-7" width="128" height="103"/>
+        <element name="Outcome" positionX="-81" positionY="128" width="128" height="103"/>
+        <element name="MonthlyIncome" positionX="108" positionY="9" width="128" height="88"/>
+        <element name="MonthlyOutcome" positionX="115" positionY="144" width="128" height="88"/>
     </elements>
 </model>
