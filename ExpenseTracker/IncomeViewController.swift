@@ -9,6 +9,7 @@
 import UIKit
 
 class IncomeViewController: UIViewController,UIPopoverPresentationControllerDelegate {
+    var isincome = true
     
     var isdisplay = false
     
@@ -116,7 +117,7 @@ class IncomeViewController: UIViewController,UIPopoverPresentationControllerDele
              print(data["category"])
              //let cost = Expense(data: data!)
              //userdata.income?[date]?.append(cost)*/
-            let income = Expense(amount: amount,category: category)
+            let income = Expense(amount: amount,category: category, isincome: isincome , date: date, monthly: Monthamount.monthdescription[getmonth(date: date)]!)
             var incomearray : [Expense] = Userdata.income[getdate(date)] ?? []
             incomearray.append(income)
             Userdata.income[getdate(date)] = incomearray
@@ -135,6 +136,8 @@ class IncomeViewController: UIViewController,UIPopoverPresentationControllerDele
     @IBAction func cancel(_ sender: UIButton) {
         
     }
+    
+    
     
     func adaptivePresentationStyle(for controller: UIPresentationController, traitCollection: UITraitCollection) -> UIModalPresentationStyle {
         return .none

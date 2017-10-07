@@ -10,7 +10,7 @@ import UIKit
 
 class settingTableViewController: UITableViewController {
     
-    let settinglist = ["Help", "About us", "Feedback"]
+    let settinglist = ["Help", "About us", "Feedback","iCloud","Weather"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,11 +41,29 @@ class settingTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "settingcell", for: indexPath)
-        cell.textLabel?.text = settinglist[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "settingcell", for: indexPath) as! settingTableViewCell
+        cell.settinglabel.text = settinglist[indexPath.row]
+        if settinglist[indexPath.row] != "iCloud"{
+            cell.settingswitch.isHidden = true
+        }
+        else{
+            cell.settingswitch.isOn = false
+        }
         // Configure the cell...
 
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if settinglist[indexPath.row] == "About us"{
+            performSegue(withIdentifier: "aboutus", sender: self)
+        }
+        if settinglist[indexPath.row] == "Feedback"{
+            performSegue(withIdentifier: "feedback", sender: self)
+        }
+        if settinglist[indexPath.row] == "Weather"{
+            performSegue(withIdentifier: "weather", sender: self)
+        }
     }
  
 

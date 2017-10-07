@@ -17,6 +17,8 @@ public func getdate(_ date : Date) -> String
     return datestring
 }
 
+
+
 struct showoption {
     static var showingoption = ""
 }

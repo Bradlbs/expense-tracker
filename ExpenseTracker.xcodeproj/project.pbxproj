@@ -8,10 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		498E8D91BFC43E4A9A8E6A7F /* Pods_ExpenseTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF14C0B92AAABDD55991C10 /* Pods_ExpenseTracker.framework */; };
+		A20E4EE01F87086C00A7B2D9 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20E4EDF1F87086C00A7B2D9 /* Money.swift */; };
+		A20E4EE21F87087900A7B2D9 /* Monthly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20E4EE11F87087900A7B2D9 /* Monthly.swift */; };
 		A21F041E1F4C023F00C24953 /* settingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21F041D1F4C023F00C24953 /* settingTableViewController.swift */; };
 		A22C9EFA1F523F0800EEF7D8 /* Detailmodule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22C9EF91F523F0800EEF7D8 /* Detailmodule.swift */; };
 		A22C9F231F52B88F00EEF7D8 /* ExpenseTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22C9F221F52B88F00EEF7D8 /* ExpenseTrackerUITests.swift */; };
 		A22C9F6C1F52E66200EEF7D8 /* popoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22C9F6B1F52E66200EEF7D8 /* popoverViewController.swift */; };
+		A242FFF91F888F950015D17D /* settingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A242FFF81F888F950015D17D /* settingTableViewCell.swift */; };
+		A242FFFB1F88C4B20015D17D /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A242FFFA1F88C4B20015D17D /* WeatherViewController.swift */; };
 		A26B38C41F2DC19800A99C2D /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26B38C31F2DC19800A99C2D /* ChartViewController.swift */; };
 		A27CADB71F36C4FE00E4A19A /* displayboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27CADB61F36C4FE00E4A19A /* displayboard.swift */; };
 		A2CAB67C1F7B783000AA20C4 /* IncomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CAB67B1F7B783000AA20C4 /* IncomeViewController.swift */; };
@@ -51,12 +55,16 @@
 /* Begin PBXFileReference section */
 		46B81B1483AE247190837F71 /* Pods-ExpenseTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpenseTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExpenseTracker/Pods-ExpenseTracker.release.xcconfig"; sourceTree = "<group>"; };
 		8FF14C0B92AAABDD55991C10 /* Pods_ExpenseTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExpenseTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20E4EDF1F87086C00A7B2D9 /* Money.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
+		A20E4EE11F87087900A7B2D9 /* Monthly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monthly.swift; sourceTree = "<group>"; };
 		A21F041D1F4C023F00C24953 /* settingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingTableViewController.swift; sourceTree = "<group>"; };
 		A22C9EF91F523F0800EEF7D8 /* Detailmodule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detailmodule.swift; sourceTree = "<group>"; };
 		A22C9F201F52B88F00EEF7D8 /* ExpenseTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpenseTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A22C9F221F52B88F00EEF7D8 /* ExpenseTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerUITests.swift; sourceTree = "<group>"; };
 		A22C9F241F52B88F00EEF7D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A22C9F6B1F52E66200EEF7D8 /* popoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = popoverViewController.swift; sourceTree = "<group>"; };
+		A242FFF81F888F950015D17D /* settingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingTableViewCell.swift; sourceTree = "<group>"; };
+		A242FFFA1F88C4B20015D17D /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		A26B38C31F2DC19800A99C2D /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		A27CADB61F36C4FE00E4A19A /* displayboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = displayboard.swift; sourceTree = "<group>"; };
 		A2CAB67B1F7B783000AA20C4 /* IncomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomeViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +117,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A20E4ED61F8701CD00A7B2D9 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				B6F953081F84963A0075B39D /* ExpenseT.xcdatamodeld */,
+				A20E4EDF1F87086C00A7B2D9 /* Money.swift */,
+				A20E4EE11F87087900A7B2D9 /* Monthly.swift */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
 		A22C9F211F52B88F00EEF7D8 /* ExpenseTrackerUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +155,8 @@
 				A21F041D1F4C023F00C24953 /* settingTableViewController.swift */,
 				A22C9F6B1F52E66200EEF7D8 /* popoverViewController.swift */,
 				A2CAB67B1F7B783000AA20C4 /* IncomeViewController.swift */,
+				A242FFF81F888F950015D17D /* settingTableViewCell.swift */,
+				A242FFFA1F88C4B20015D17D /* WeatherViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -175,7 +195,7 @@
 		A2CCEF641F273AB400CA669E /* ExpenseTracker */ = {
 			isa = PBXGroup;
 			children = (
-				B6F953081F84963A0075B39D /* ExpenseT.xcdatamodeld */,
+				A20E4ED61F8701CD00A7B2D9 /* Core Data */,
 				A22C9F2A1F52D6BD00EEF7D8 /* Module */,
 				A26B38C21F2DC13A00A99C2D /* supporting files */,
 				A22C9F2B1F52D6E800EEF7D8 /* ViewController */,
@@ -356,13 +376,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				A21F041E1F4C023F00C24953 /* settingTableViewController.swift in Sources */,
+				A242FFFB1F88C4B20015D17D /* WeatherViewController.swift in Sources */,
 				A2CAB67C1F7B783000AA20C4 /* IncomeViewController.swift in Sources */,
 				A2CCEF6A1F273AB400CA669E /* OutcomeViewController.swift in Sources */,
 				A22C9F6C1F52E66200EEF7D8 /* popoverViewController.swift in Sources */,
 				A26B38C41F2DC19800A99C2D /* ChartViewController.swift in Sources */,
 				A22C9EFA1F523F0800EEF7D8 /* Detailmodule.swift in Sources */,
+				A20E4EE01F87086C00A7B2D9 /* Money.swift in Sources */,
 				A2CAB6841F7CB5C900AA20C4 /* Userdata.swift in Sources */,
+				A242FFF91F888F950015D17D /* settingTableViewCell.swift in Sources */,
 				A27CADB71F36C4FE00E4A19A /* displayboard.swift in Sources */,
+				A20E4EE21F87087900A7B2D9 /* Monthly.swift in Sources */,
 				A2CCEF661F273AB400CA669E /* AppDelegate.swift in Sources */,
 				A2CCEF681F273AB400CA669E /* FirstViewController.swift in Sources */,
 				B6F9530A1F84963A0075B39D /* ExpenseT.xcdatamodeld in Sources */,

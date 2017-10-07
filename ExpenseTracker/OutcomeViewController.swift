@@ -12,6 +12,7 @@ class SecondViewController: UIViewController , UIPopoverPresentationControllerDe
     
     var keyboardstatus = false
     var dotstatus = false
+    var isincome = false
     
     //private var userdata = Userdata()
     
@@ -142,7 +143,7 @@ class SecondViewController: UIViewController , UIPopoverPresentationControllerDe
             print(data["category"])
             //let cost = Expense(data: data!)
             //userdata.income?[date]?.append(cost)*/
-            let cost = Expense(amount: amount,category: category)
+            let cost = Expense(amount: amount,category: category, isincome: isincome, date: date , monthly: Monthamount.monthdescription[getmonth(date: date)]!)
             var outcomearray : [Expense] = Userdata.outcome[getdate(date)] ?? []
             outcomearray.append(cost)
             Userdata.outcome[getdate(date)] = outcomearray
